@@ -1,56 +1,86 @@
 <html>
 <head>
   <title>UI Evaluation</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 
+<div class="myDiv">
 <h2>
-  What do you think of the UI in this
-  <a href="https://www.uottawa.ca/en">uOttawa</a> site?
+  Please check out the UI on the
+  <a href="https://www.uottawa.ca/en">uOttawa</a> website,<br>
+  and fill out the questionaire below.
 </h2><br>
 
 <a href="https://www.uottawa.ca/en">
-  <img src="images/uOttawa.PNG" alt="https://www.uottawa.ca/en" width="600" height="350">
+  <img src="images/uOttawa.PNG" alt="https://www.uottawa.ca/en" width="560" height="300">
 </a><br>
+<br>
+</div>
 
 <body>
     <form name="UI Form">
-      First name: <input type="text" name="firstname"><br>
-      Last name: <input type="text" name="lastname"><br>
+      <div class="myDiv">
+        <h3>Please enter the name of the program you are in.</h3>
+        Program: <input type="text" name="firstname"><br>
+        <br>
+      </div>
 
-      Are you:<br>
-      <input type="radio" name="sex" value="male">Male<br>
-      <input type="radio" name="sex" value="female">Female<br>
+      <div class="myDiv">
+        <h3>Would you visit this website again?</h3>
+        <input type="radio" name="y/n" value="yes">Yes<br>
+        <input type="radio" name="y/n" value="no">No<br>
+        <br>
+      </div>
 
-      My favourite fruit is:<br>
-      <input type="checkbox" name="Apples" value="Apples">Apples<br>
-      <input type="checkbox" name="Grapes" value="Grapes">Grapes<br>
-      <input type="checkbox" name="Bananas" value="Bananas">Bananas<br>
+      <div class="myDiv">
+        <h3>Please check every characteristic that the website satisfies.</h3>
+        <input type="checkbox" name="proper-functionality" value="proper-functionality">Proper Functionality<br>
+        <input type="checkbox" name="consistency" value="Consistency">Consistency<br>
+        <input type="checkbox" name="efficiency" value="Efficiency">Efficiency<br>
+        <input type="checkbox" name="usability" value="Usability">Usability<br>
+        <input type="checkbox" name="reliability" value="Reliability">Reliability<br>
+        <input type="checkbox" name="security" value="Security">Security<br>
+        <br>
+      </div>
 
-      What is your favourite pokemon type?<br>
-      <select name="favourite"><br>
-        <option value="Grass">Grass</option><br>
-        <option value="Water">Water</option><br>
-        <option value="Fire">Fire</option><br>
-      </select><br>
+      <div class="myDiv">
+        <h3>Is the uOttawa website better, worse, or on par with other university websites,<br>
+        when it comes to user friendly design?</h3>
+        <select name="comparison"><br>
+          <option value="Better">Better</option><br>
+          <option value="Worse">Worse</option><br>
+          <option value="Same">Same</option><br>
+        </select><br>
+        <br>
+      </div>
 
-      Comments:<br>
-      <textarea rows="5" cols="30"/>
-      </textarea><br>
+      <div class="myDiv">
+        <h3>Do you have any ideas to help improve the design of the webpage?<br>
+        Please enter them here.</h3>
+        <textarea rows="5" cols="30"/>
+        </textarea><br>
+        <br>
+      </div>
 
-      Likert Bar:<br>
-      Strongly Disagree<input type="radio" name="Likert" value="1">
-      <input type="radio" name="Likert" value="2">
-      <input type="radio" name="Likert" value="3">
-      <input type="radio" name="Likert" value="4">
-      <input type="radio" name="Likert" value="5">Strongly Agree<br>
+      <div class="myDiv">
+        <h3>The uOttawa website is easy to navigate:</h3>
+        Strongly Disagree<input type="radio" name="Likert" value="1">
+        <input type="radio" name="Likert" value="2">
+        <input type="radio" name="Likert" value="3">
+        <input type="radio" name="Likert" value="4">
+        <input type="radio" name="Likert" value="5">Strongly Agree<br>
+        <br>
+      </div>
 
-
-      <input type="submit" value="Submit"/>
+      <div class="myDiv">
+        <br>
+        <input type="submit" value="Submit"/>
+      </div>
     </form>
 
     <footer>
-        <p>Author: Gregory Mitchell (300053307)<br>
+        <p class="signature">Author: Gregory Mitchell (300053307)<br>
         <a href="mailto:gmitc012@uottawa.ca">gmitc012@uottawa.ca</a>
         </p>
     </footer>

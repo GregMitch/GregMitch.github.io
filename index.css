@@ -1,0 +1,9 @@
+.myDiv {
+  border: 5px outset maroon;
+  background-color: grey;
+  text-align: center;
+}
+
+body {
+  background-color: grey;
+}

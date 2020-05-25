@@ -35,3 +35,9 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
+/* Positions author signature at the bottom */
+footer {
+  position: absolute;
+  bottom: 25px;
+}

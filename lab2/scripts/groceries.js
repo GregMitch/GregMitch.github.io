@@ -9,10 +9,52 @@ var products = [
 		price: 1.99
 	},
 	{
+		name: "twinkies",
+		vegetarian: false,
+		glutenFree: false,
+		price: 5.65
+	},
+	{
+		name: "carrots",
+		vegetarian: true,
+		glutenFree: true,
+		price: 2.47
+	},
+	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.35
+	},
+	{
+		name: "bagel",
+		vegetarian: true,
+		glutenFree: false,
+		price: 2.97
+	},
+	{
+		name: "beef",
+		vegetarian: false,
+		glutenFree: true,
+		price: 12.05
+	},
+	{
+		name: "chicken",
+		vegetarian: false,
+		glutenFree: true,
+		price: 11.00
+	},
+	{
+		name: "lettuce",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.97
+	},
+	{
+		name: "apples",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.97
 	},
 	{
 		name: "salmon",

@@ -36,6 +36,10 @@ function populateListProductChoices(slct1, slct2) {
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1.value);
 
+		// Line below adapted from https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_sort_object1
+		optionArray.sort(function(a,b) {return a.price - b.price});
+
+
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
@@ -47,13 +51,13 @@ function populateListProductChoices(slct1, slct2) {
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
-		checkbox.value = productName;
+		checkbox.value = productName.name;
 		s2.appendChild(checkbox);
 
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
-		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
+		label.htmlFor = productName.name;
+		label.appendChild(document.createTextNode(productName.name + " " + productName.price));
 		s2.appendChild(label);
 
 		// create a breakline node and add in HTML DOM

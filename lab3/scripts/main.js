@@ -62,6 +62,7 @@ function populateListProductChoices(slct1, slct2) {
  		picture.setAttribute("height", "228");
 		s2.appendChild(picture);
 		s2.appendChild(document.createElement("br"));
+		s2.appendChild(checkbox);
 
 		var label = document.createElement('label')
 		label.htmlFor = productName.name;

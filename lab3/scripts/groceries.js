@@ -8,7 +8,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99,
-		img: "https://en.wikipedia.org/wiki/Broccoli#/media/File:Broccoli_and_cross_section_edit.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Broccoli_and_cross_section_edit.jpg/1024px-Broccoli_and_cross_section_edit.jpg",
 		organic: true
 	},
 	{
@@ -16,7 +16,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: false,
 		price: 5.65,
-		img: "https://en.wikipedia.org/wiki/Twinkie#/media/File:Hostess-Twinkies.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Hostess-Twinkies.jpg/1024px-Hostess-Twinkies.jpg",
 		organic: false
 	},
 	{
@@ -24,7 +24,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 2.47,
-		img: "https://en.wikipedia.org/wiki/Carrot#/media/File:Vegetable-Carrot-Bundle-wStalks.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vegetable-Carrot-Bundle-wStalks.jpg/1024px-Vegetable-Carrot-Bundle-wStalks.jpg",
 		organic: true
 	},
 	{
@@ -32,7 +32,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.35,
-		img: "https://en.wikipedia.org/wiki/Bread#/media/File:Breadindia.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/3/39/Breadindia.jpg",
 		organic: false
 	},
 	{
@@ -40,7 +40,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		price: 2.97,
-		img: "https://en.wikipedia.org/wiki/Bagel#/media/File:Bagel-Plain-Alt.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bagel-Plain-Alt.jpg/1024px-Bagel-Plain-Alt.jpg",
 		organic: false
 	},
 	{
@@ -48,7 +48,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 12.05,
-		img: "https://en.wikipedia.org/wiki/Beef#/media/File:Standing-rib-roast.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/6/60/Standing-rib-roast.jpg",
 		organic: true
 	},
 	{
@@ -56,7 +56,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 11.00,
-		img: "https://en.wikipedia.org/wiki/Chicken_as_food#/media/File:Rosemary_chicken.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Rosemary_chicken.jpg/1024px-Rosemary_chicken.jpg",
 		organic: false
 	},
 	{
@@ -64,7 +64,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.97,
-		img: "https://en.wikipedia.org/wiki/Lettuce#/media/File:Romaine_lettuce.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Romaine_lettuce.jpg/800px-Romaine_lettuce.jpg",
 		organic: false
 	},
 	{
@@ -72,7 +72,7 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		price: 4.97,
-		img: "https://en.wikipedia.org/wiki/Apple#/media/File:Honeycrisp.jpg",
+		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Honeycrisp.jpg/1024px-Honeycrisp.jpg",
 		organic: true
 	},
 	{
@@ -80,7 +80,7 @@ var products = [
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00,
-		img: "https://en.wikipedia.org/wiki/Salmon_as_food#/media/File:Atlantic_Salmon.png",
+		img: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Atlantic_Salmon.png",
 		organic: false
 	}
 ];

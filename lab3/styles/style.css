@@ -1,14 +1,20 @@
-/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+/* Style the sidebar */
+.sidenav {
+  height: 100%;
+  width: 85px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fff; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
+/* Style the buttons that are used to open the sidebar content */
+.sidenav button {
   background-color: inherit;
   float: left;
   border: none;
@@ -19,30 +25,30 @@
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.sidenav button:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
+/* Create an active/current navlink class */
+.sidenav button.active {
   background-color: #ccc;
 }
 
-/* Style the tab content */
-.tabcontent {
+/* Style the sidebar content */
+.navcontent {
+  position: relative;
+  left: 85px;
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  padding: 6px 6px;
+  border: 1px solid #ccc;=
 }
 
 body {
   background-color: #3FF118;
 }
 
-/* Positions author signature at the bottom
+/* Positions author signature at the bottom */
 footer {
-  position: absolute;
-  bottom: 25px;
+  position: relative;
+  left: 85px;
 }
-*/

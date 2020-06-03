@@ -2,6 +2,7 @@
 // A set of ingredients should be added to products
 
 // Some vegtables and animals raised with horomones hence why their organic property is false.
+// foodGroup is a list where index 0 = Fruit & Vegetable, index 1 = Grain, index 2 = Meat, index 3 = Treat
 var products = [
 	{
 		name: "brocoli",
@@ -9,7 +10,8 @@ var products = [
 		glutenFree: true,
 		price: 1.99,
 		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Broccoli_and_cross_section_edit.jpg/1024px-Broccoli_and_cross_section_edit.jpg",
-		organic: true
+		organic: true,
+		foodGroup: [1,0,0,0]
 	},
 	{
 		name: "twinkies",
@@ -17,7 +19,8 @@ var products = [
 		glutenFree: false,
 		price: 5.65,
 		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Hostess-Twinkies.jpg/1024px-Hostess-Twinkies.jpg",
-		organic: false
+		organic: false,
+		foodGroup: [0,0,0,1]
 	},
 	{
 		name: "carrots",
@@ -25,7 +28,8 @@ var products = [
 		glutenFree: true,
 		price: 2.47,
 		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Vegetable-Carrot-Bundle-wStalks.jpg/1024px-Vegetable-Carrot-Bundle-wStalks.jpg",
-		organic: true
+		organic: true,
+		foodGroup: [1,0,0,0]
 	},
 	{
 		name: "bread",
@@ -33,7 +37,8 @@ var products = [
 		glutenFree: false,
 		price: 2.35,
 		img: "https://upload.wikimedia.org/wikipedia/commons/3/39/Breadindia.jpg",
-		organic: false
+		organic: false,
+		foodGroup: [0,1,0,0]
 	},
 	{
 		name: "bagel",
@@ -41,7 +46,8 @@ var products = [
 		glutenFree: false,
 		price: 2.97,
 		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Bagel-Plain-Alt.jpg/1024px-Bagel-Plain-Alt.jpg",
-		organic: false
+		organic: false,
+		foodGroup: [0,1,0,0]
 	},
 	{
 		name: "beef",
@@ -49,7 +55,8 @@ var products = [
 		glutenFree: true,
 		price: 12.05,
 		img: "https://upload.wikimedia.org/wikipedia/commons/6/60/Standing-rib-roast.jpg",
-		organic: true
+		organic: true,
+		foodGroup: [0,0,1,0]
 	},
 	{
 		name: "chicken",
@@ -57,7 +64,8 @@ var products = [
 		glutenFree: true,
 		price: 11.00,
 		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Rosemary_chicken.jpg/1024px-Rosemary_chicken.jpg",
-		organic: false
+		organic: false,
+		foodGroup: [0,0,1,0]
 	},
 	{
 		name: "lettuce",
@@ -65,7 +73,8 @@ var products = [
 		glutenFree: true,
 		price: 1.97,
 		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Romaine_lettuce.jpg/800px-Romaine_lettuce.jpg",
-		organic: false
+		organic: false,
+		foodGroup: [1,0,0,0]
 	},
 	{
 		name: "apples",
@@ -73,7 +82,8 @@ var products = [
 		glutenFree: true,
 		price: 4.97,
 		img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Honeycrisp.jpg/1024px-Honeycrisp.jpg",
-		organic: true
+		organic: true,
+		foodGroup: [1,0,0,0]
 	},
 	{
 		name: "salmon",
@@ -81,7 +91,8 @@ var products = [
 		glutenFree: true,
 		price: 10.00,
 		img: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Atlantic_Salmon.png",
-		organic: false
+		organic: false,
+		foodGroup: [0,0,1,0]
 	}
 ];
 

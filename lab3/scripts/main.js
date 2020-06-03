@@ -41,17 +41,48 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// Function that handles Customer preferences
+function prefFunction() {
+	var x = document.getElementById("Vegetarian").checked;
+	var y = document.getElementById("Organic").checked;
+	var z = document.getElementById("GlutenFree").checked;
+
+	if(x == true && y == true && z == true) {
+		populateListProductChoices("Vegetarian & GlutenFree & Organic", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+	else if (x == true && y == true) {
+		populateListProductChoices("Organic & Vegetarian", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+	else if (x == true && z ==true) {
+		populateListProductChoices("Vegetarian & GlutenFree", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+	else if (y == true && z == true) {
+		populateListProductChoices("Organic & GlutenFree", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+	else if (x == true) {
+		populateListProductChoices("Vegetarian", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+	else if (y == true) {
+		populateListProductChoices("Organic", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+	else if (z == true) {
+		populateListProductChoices("GlutenFree", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+	else {
+		populateListProductChoices("None", 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')
+	}
+}
+
 
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
 function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
-    var s1 = document.getElementById(slct1);
+    var s1 = slct1;
     var s2 = document.getElementById(slct2);
 		var s3 = document.getElementById(slct3);
 		var s4 = document.getElementById(slct4);
 		var s5 = document.getElementById(slct5);
-
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
 		s3.innerHTML = "";
@@ -59,7 +90,7 @@ function populateListProductChoices(slct1, slct2, slct3, slct4, slct5) {
 		s5.innerHTML = "";
 
 	// obtain a reduced list of products based on restrictions
-    var optionArray = restrictListProducts(products, s1.value);
+    var optionArray = restrictListProducts(products, s1);
 
 		// Line below adapted from https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_sort_object1
 		optionArray.sort(function(a,b) {return a.price - b.price});

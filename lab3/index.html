@@ -11,32 +11,34 @@
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="sidenav">
-  <button class="navlinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="navlinks" onclick="openInfo(event, 'Customer')">Customer</button>
   <button class="navlinks" onclick="openInfo(event, 'Products')">Products</button>
   <button class="navlinks" onclick="openInfo(event, 'Cart')">Cart</button>
 </div>
 
 <!-- Tab content -->
-<div id="Client" class="navcontent">
-  <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')">
-		<option value=""></option>
-		<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-		<option value="Organic">OrganicOnly</option>
-		<option value="Vegetarian & GlutenFree">Vegetarian & GlutenFree</option>
-		<option value="Organic & GlutenFree">Organic & GlutenFree</option>
-		<option value="Organic & Vegetarian">Organic & Vegetarian</option>
-		<option value="Vegetarian & GlutenFree & Organic">Vegetarian & GlutenFree & Organic</option>
-    <option value="None">None</option>
-	</select>
+<div id="Customer" class="navcontent">
+  <h3>Customer Information</h3>
+  <p>Tell us a bit about yourself.</p>
+	Please choose your dietary preferences, if you have none please leave the options unselected:
+
+  <br>
+	<input type="checkbox" id="Vegetarian" name="vegetarian" value="vegetarian">
+	<label for="Vegetarian"> I am vegetarian</label><br>
+	<input type="checkbox" id="Organic" name="organic" value="organic">
+	<label for="Organic"> I prefer organic food</label><br>
+	<input type="checkbox" id="GlutenFree" name="glutenfree" value="glutenfree">
+	<label for="GlutenFree"> I want my food to be gluten free</label><br>
+
+	<button onclick="prefFunction()">Update Preferences</button>
+
+	<!-- <form id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayFruit', 'displayGrain', 'displayMeat', 'displayTreat')"> -->
+
 </div>
 
 <div id="Products" class="navcontent">
   <h3>Your targeted products</h3>
-  <p>We preselected products based on your restrictions.</p>
+  <p>We preselected products based on your preferences.</p>
 	 Choose items to buy: <br>
 
 	 <button class="accordion">Fruits & Vegtables</button>
@@ -66,7 +68,7 @@
 
 <div id="Cart" class="navcontent">
   <h3>Cart</h3>
-  <p>Here is your cart.</p>
+  <p>Here you can review the contents of your cart.</p>
   <div id="displayCart"></div>
 </div>
 

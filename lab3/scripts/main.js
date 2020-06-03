@@ -22,6 +22,7 @@ function openInfo(evt, navName) {
 }
 
 // Accordion style structure stuff
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -40,6 +41,18 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+var bcc = document.getElementsByClassName("panel");
+
+function toggleItem() {
+	for (i = 0; i < acc.length; i++) {
+		if(acc[i].className === "accordion active") {
+			acc[i].className = "accordion";
+			bcc[i].style.display = "none";
+		}
+	}
+}
+
 
 // Function that handles Customer preferences
 function prefFunction() {
@@ -183,6 +196,6 @@ function selectedItems(){
 
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts).toFixed(2)));
 
 }

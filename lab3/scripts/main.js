@@ -73,6 +73,8 @@ function prefFunction() {
 	}
 }
 
+// In case no dietary options is selected sets default to none
+prefFunction()
 
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos

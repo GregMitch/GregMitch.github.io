@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>UI Evaluation</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+  <style>
+    .myDiv {
+      border: 5px outset maroon;
+      background-color: grey;
+      text-align: center;
+    }
+    body {
+      background-color: grey;
+    }
+</style>
+
+</head>
+
+<div class="myDiv">
+<h2>
+  Please check out the UI on the
+  <a href="https://www.uottawa.ca/en">uOttawa</a> website,<br>
+  and fill out the questionnaire below.
+</h2><br>
+
+<a href="https://www.uottawa.ca/en">
+  <img src="https://gregmitch.github.io/lab1/images/uOttawa.PNG" alt="https://www.uottawa.ca/en" width="560" height="300">
+</a><br>
+<br>
+</div>
+
+<body>
+    <form name="UI Form">
+      <div class="myDiv">
+        <h3>Please enter the name of the program you are in.</h3>
+        Program: <input type="text" name="program" required><br>
+        <br>
+      </div>
+
+      <div class="myDiv">
+        <h3>Would you visit this website again?</h3>
+        <input type="radio" name="yn" value="Yes">Yes<br>
+        <input type="radio" name="yn" value="No">No<br>
+        <br>
+      </div>
+
+      <div class="myDiv">
+        <h3>Please check every characteristic that the website satisfies.</h3>
+        <input type="checkbox" name="characteristic" value="Proper-Functionality">Proper Functionality<br>
+        <input type="checkbox" name="characteristic" value="Consistency">Consistency<br>
+        <input type="checkbox" name="characteristic" value="Efficiency">Efficiency<br>
+        <input type="checkbox" name="characteristic" value="Usability">Usability<br>
+        <input type="checkbox" name="characteristic" value="Reliability">Reliability<br>
+        <input type="checkbox" name="characteristic" value="Security">Security<br>
+        <br>
+      </div>
+
+      <div class="myDiv">
+        <h3>Is the uOttawa website better, worse, or on par with other university websites,<br>
+        when it comes to user friendly design?</h3>
+        <select name="comparison"><br>
+          <option value="Better">Better</option><br>
+          <option value="Worse">Worse</option><br>
+          <option value="Same">Same</option><br>
+        </select><br>
+        <br>
+      </div>
+
+      <div class="myDiv">
+        <h3>Do you have any ideas to help improve the design of the webpage?<br>
+        Please enter them here.</h3>
+        <textarea name="comment" white-space="pre-wrap" rows="5" cols="30"/></textarea><br>
+        <br>
+      </div>
+
+      <div class="myDiv">
+        <h3>The uOttawa website is easy to navigate:</h3>
+        Strongly Disagree<input type="radio" name="likert" value="Strongly Disagree">
+        <input type="radio" name="likert" value="Disagree">
+        <input type="radio" name="likert" value="Neutral">
+        <input type="radio" name="likert" value="Agree">
+        <input type="radio" name="likert" value="Strongly Agree">Strongly Agree<br>
+        <br>
+      </div>
+
+      <div class="myDiv">
+        <br>
+        <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      </div>
+    </form>
+    <footer>
+        <p class="signature">Author: Gregory Mitchell (300053307)<br>
+        <a href="mailto:gmitc012@uottawa.ca">gmitc012@uottawa.ca</a>
+        </p>
+    </footer>
+    <script src="/assets/action.js"></script>
+</body>
+</html>
